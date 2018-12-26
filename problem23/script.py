@@ -16,10 +16,9 @@ for num in range(2, 28124):
     if facts_sum > num:
         abundant_numbers.append(num)
 
-np_abundant = np.array(abundant_numbers)
 total_sum = 0
 all_sums = [0]*28124
-for i in np_abundant:
+for i in abundant_numbers:
     for j in abundant_numbers:
         if i+j > 28123:
             break
