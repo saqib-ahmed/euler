@@ -2,7 +2,7 @@
 import numpy as np
 import re
 
-file = open("/Users/saqib/dev/project_euler/problem96/p096_sudoku.txt").read()
+file = open("p096_sudoku.txt").read()
 master_arr = re.sub(r'Grid \d+', "~", file)
 master_arr = master_arr.replace("~\n", "~")
 master_arr = master_arr.replace("\n~", "~")
